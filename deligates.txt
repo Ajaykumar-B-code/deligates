@@ -17,6 +17,17 @@ To call a method by using a delegate we have 3 steps:
 
 we have to pass the method name as the parameter to the delegate constructor
 
-3. Now call the delegate by passing the required parameter values, so that internally the method which is bound with the delegate gets executed
+3. Now call the delegate by passing the required parameter values, so that internally the method that is bound with the delegate gets executed
 
+
+
+multicast delegate
+
+it will store the reference of two or more methods
+
+this delegate holds the reference of two method
+
+if you call one delegate both the methods can be executed
+
+if the methods have return type as int or non void then it will return the last method
 

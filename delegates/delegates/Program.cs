@@ -6,27 +6,23 @@ using System.Threading.Tasks;
 
 namespace delegates
 {
-
-    public delegate void AddDelegate(int x, int y);
-    public delegate string SayDelegate(string str);
+    public delegate void Rectangledelegate(int a ,int b);
     internal class practice
     {
-        public void AddNums(int a, int b)
+        public void getArea(int a, int b)
         {
-            Console.WriteLine(a + b);
+            Console.WriteLine($"area: {a + b}");
         }
-        public static string SayHi(string name)
+        public void perimeter(int l, int b)
         {
-            return "Hi " + name;
+            Console.WriteLine($"rectangle: {2*(l+b)}");
         }
         public static void Main()
         {
             practice p = new practice();
-            AddDelegate ap = new AddDelegate(p.AddNums);
-            ap.Invoke(150, 20);
-
-            string str = practice.SayHi("Ajay");
-            Console.WriteLine(str);
+            Rectangledelegate rect =p.getArea;
+            rect += p.perimeter;
+            rect(45, 25);
             Console.ReadLine();
         }
     }
