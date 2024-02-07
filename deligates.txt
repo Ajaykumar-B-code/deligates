@@ -31,3 +31,10 @@ if you call one delegate both the methods can be executed
 
 if the methods have return type as int or non void then it will return the last method
 
+
+anonymous methods
+
+method which doesn't have a name it has only a body and contains a delegate keyword
+no need of access modifier and return type 
+main advantage is less typing work but we should not use Anonymous method everytime 
+use only code volume are lesser
