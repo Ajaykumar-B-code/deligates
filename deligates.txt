@@ -1,0 +1,22 @@
+Delegate: it is a type-safe function pointer
+
+-A delegate holds the reference of a method and then calls the method for execution
+
+if a method is static we will not add a delegate
+
+if we want to create a delegate the return type and parameter should be the same as the method
+
+delegate is a reference type
+To call a method by using a delegate we have 3 steps:
+
+1. Define a delegate
+
+[<modifiers>] deligate type<name>([<parameter list>])
+
+2. instance of delegate
+
+we have to pass the method name as the parameter to the delegate constructor
+
+3. Now call the delegate by passing the required parameter values, so that internally the method which is bound with the delegate gets executed
+
+
